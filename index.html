@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <title>Vidya Kusuma</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="hamburgers.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    </head>
+
+
+    <body onload="draw()">
+                <div class="sidenav" id="mysidenav">
+                    <span class="close-style" onclick="closeNav()"></span>
+                        <div class="menu-items" id="slide-menu">
+                            <div class="menu-padding"><a href="#">About</a></div>
+                            <div class="menu-padding"><a href="#">Resume</a></div>
+                            <div class="menu-padding"><a href="#">Projects</a></div>
+                            <div class="menu-padding"><a href="#">Blogs</a></div>
+                        </div>
+                </div>
+                <span class="bar-style"  onclick="openNav()" > 
+                    <div class="hamburger hamburger--slider button-style" id="hamburger-menu" type="button">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                    </div>
+                </span>
+
+        <div id="particle-js" class="background-animation"></div>
+        <div class="container">
+            <!-- <div class="left-line"></div>
+            <div class="right-line"></div> -->
+            
+
+            <div class="hero-section">
+                <div class="social-links">
+                    <a href="https://dribbble.com/VidyaKusuma" target="_blank" class="social-element">Dribbble</a>
+                    <a href="" class="social-element">Behnace</a>
+                    <a href="" class="social-element">Resume</a>
+                </div>
+                <div class="center-blog">
+                    <div class="hero-segment"> 
+                        <div class="name-style">Vidya Kusuma</div>
+                        <div class="role-style role-space" >UI/UX Designer</div>
+                        <div class="role-style" >Interaction Designer</div>
+                    </div>
+                    <div class="hero-segment">`
+                        <div ><img src="vidya.jpg" class="hero-image-style" alt=""></div>
+                        
+                    </div>
+                    
+                    <div class="hero-segment rect-segment">
+                        <div class="rect"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <div class="section slideup-animation" id="all-works">
+                <div class="section-center">
+                    <div class="big-background-text">All Works</div>
+                    <div class="small-foreground-text">All Works</div>
+                    <div class="tag-line">made with passion</div>
+                </div>
+
+            </div>
+            <div class="space"></div>
+            <div class="section" id="project-one">
+                <div class="left-content">
+                    <div class="project-description slideup-animation">
+                        <div class="project-number">01</div>
+                        <div class="project-title" >AskAway CaseStudy: UI/UX</div>
+                        <div class="project-body">an app to ask questions based on locations and get timely information, to post information based on interest and location so that people get notified on what is happening</div>
+                        <div class="rect-border"></div>
+                        <div class="read-more-link">Read More <i class="fa fa-long-arrow-right" aria-hidden="true" id=""></i> </div>
+                        
+                    </div>
+                </div>
+                <div class="right-content slideup-animation">
+                    <img src="artboard.png" class="image-alter" alt="">
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="section" id="project-two">
+                    <div class="left-content slideup-animation">
+                        <div>
+                            <img src="artboard1.png" class="image-alter-project-two" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="right-content">
+                        <div class="project-two-description slideup-animation">
+                                <div class="project-number">02</div>
+                                <div class="project-title" >Lorem ipsum, lorem ipsum</div>
+                                <div class="project-body">Lorem Ipsum dolor sit amet,consectrtur adipiscing elit. Aliquam enim risus </div>
+                                <div class="rect-border-two"></div>
+                                <div class="read-more-link-two">Read More <i class="fa fa-long-arrow-right" aria-hidden="true" id=""></i> </div>
+
+                        </div>
+                    </div>
+            </div>
+            <div class="space"></div>
+            <div class="section" id="project-three">
+                    <div class="left-content">
+                        <div class="project-description slideup-animation">
+                            <div class="project-number">03</div>
+                            <div class="project-title" >Lorem ipsum, lorem ipsum</div>
+                            <div class="project-body">Lorem Ipsum dolor sit amet,consectrtur adipiscing elit. Aliquam enim risus </div>
+                            <div class="rect-border"></div>
+                            <div class="read-more-link">Read More <i class="fa fa-long-arrow-right" aria-hidden="true" id=""></i> </div>
+                            
+                        </div>
+                    </div>
+                    <div class="right-content slideup-animation">
+                        <img src="artboard.png" class="image-alter" alt="">
+                    </div>
+                </div>
+
+                <div class="space"></div>
+                <div class="section slideup-animation" id="my-blogs">
+                        <div class="section-center">
+                            <div class="big-background-text">My Blogs</div>
+                            <div class="small-foreground-text">My Blogs</div>
+                        </div>
+        
+                </div>
+                <div class="space"></div>
+                <div class="section" id="blogs" >
+                    <div class="center-blog">
+                        <div class="blog-one ">
+                            <img src="image1.png" class="image-blog-one slideup-animation" alt="">
+                            <div class="slideup-animation">
+                                <div class="blog-heading"> A UX analysis of Elevators</div>
+                                <div class="blog-body">A look at how the experience of using an elevator can change by the UX decisions that are made when they are designed.</div>
+                                <div class="read-more-link-two">Read More <i class="fa fa-long-arrow-right" aria-hidden="true" id=""></i> </div>
+                            </div>
+                        </div>
+                        <div class="blog-two">
+                            <img src="duolingo.png" class="image-blog-two slideup-animation" alt="">
+                            <div class="slideup-animation">
+                                <div class="blog-heading"> The psychology behind duolingo UX </div>
+                                <div class="blog-body">Duolingo is a language learning platform where it uses gamification, psychology and other UX techniques to keep its more than 200 million users engaged in learning a new language.</div>
+                            </div>
+                        </div>
+                        <div class="blog-three">
+                                <img src="image3.png" class="image-blog-one slideup-animation" alt="">
+                                <div class="slideup-animation">
+                                    <div class="blog-heading"> How to think creatively</div>
+                                    <div class="blog-body">we are constantly faced by problems that we need to solve. In many cases, we ourselves have no clue on how to solve them. In such a time, we need to put on our creative hats and come up with ways of solving them.</div>
+                                </div>
+                        </div>
+                        <div class="blog-four">
+                            <img src="image4.jpg" class="image-blog-two slideup-animation" alt="">
+                            <div class="slideup-animation">
+                                <div class="blog-heading"> Getting started in UI/UX — 2019</div>
+                                <div class="blog-body">Getting started with a new skill is often very confusing. A lot of people give a variety of advice, most of which just might not make sense to you.
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space"></div>
+                <div class="section slideup-animation" id="photograghy">
+                        <div class="section-center">
+                            <div class="big-background-text">Photography</div>
+                            <div class="small-foreground-text">Photography</div>
+                        </div>
+                </div>
+
+                <div class="section" id="photos">
+                    <div class="center-blog">
+                        <div class="segment-one">
+                            <img src="photo1.jpeg" class="photo-one slideup-animation" alt="">
+                        </div>
+                        <div class="segment-two">
+                            <div class="subsegment-two">
+                                <div> <img src="photo2.jpeg"  class="photo-two slideup-animation" alt=""> </div>
+
+                                <div> <img src="photo3.jpeg"  class="photo-three slideup-animation" alt=""> </div>
+                        
+                            </div>
+                        </div>
+                        <div class="segment-three">
+                            <img src="photo4.jpeg" class="photo-four slideup-animation" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="section" >
+                    <div class="center-blog">
+                         <div class="segment-one"></div>
+                         <div class="segment-four">
+                             <div> <img src="photo5.jpeg"  class="photo-five slideup-animation" alt=""> </div>
+                             <div><img src="photo6.jpeg"  class="photo-six slideup-animation" alt=""></div>
+                         </div>
+                    
+                    </div>
+                        
+                </div>
+
+
+                
+                
+            
+            
+            
+            
+        </div>
+        <script src="background-animation.js"></script>
+        <script src="particles.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        
+    </body>
+
+
+    
+</html>
