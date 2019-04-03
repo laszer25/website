@@ -12,7 +12,7 @@
 
 
     <body onload="draw()">
-                <div class="sidenav" id="mysidenav">
+                     <div class="sidenav" id="mysidenav">
                     <span class="close-style" onclick="closeNav()"></span>
                         <div class="menu-items" id="slide-menu">
                             <div class="menu-padding"><a href="#">About</a></div>
@@ -21,7 +21,7 @@
                             <div class="menu-padding"><a href="#">Blogs</a></div>
                         </div>
                 </div>
-                <span class="bar-style"  onclick="openNav()" > 
+                <span class="bar-style" id="bar-style" onclick="openNav()" > 
                     <div class="hamburger hamburger--slider button-style" id="hamburger-menu" type="button">
                         <span class="hamburger-box">
                           <span class="hamburger-inner"></span>
@@ -30,16 +30,18 @@
                 </span>
 
         <div id="particle-js" class="background-animation"></div>
-        <div class="container">
+         <div id="spinner" class="spinner"></div>
+
+        <div id="page" class="container">
             <!-- <div class="left-line"></div>
             <div class="right-line"></div> -->
             
 
             <div class="hero-section">
                 <div class="social-links">
-                    <a href="https://dribbble.com/VidyaKusuma" target="_blank" class="social-element zoom">Dribbble</a>
-                    <a href="" class="social-element zoom">Behnace</a>
-                    <a href="" class="social-element zoom">Resume</a>
+                    <a href="https://dribbble.com/VidyaKusuma" target="_blank" class="social-element">Dribbble</a>
+                    <a href="" class="social-element">Behnace</a>
+                    <a href="" class="social-element">Resume</a>
                 </div>
                 <div class="center-blog">
                     <div class="hero-segment"> 
@@ -47,18 +49,19 @@
                         <div class="role-style role-space" >UI/UX Designer</div>
                         <div class="role-style" >Interaction Designer</div>
                     </div>
-                    <div class="hero-segment">
+                    <div class="hero-segment" style="display: none;">
                         <!-- <div ><img src="vidya.jpg" class="hero-image-style" alt=""></div> -->
-                        <div ><img src="pattern.png" class="hero-image-style" alt=""></div>
+                        <div ><img src="iphonexsa.png" class="hero-image-style" alt=""></div>
                         
                     </div>
                     
-                    <div class="hero-segment rect-segment">
+                    <div class="hero-segment rect-segment" style="display: none;">
                         <div class="rect"></div>
                     </div>
                 </div>
+                <div class="scroll-indicator"><i class="fa fa-2x fa-angle-double-down scroll-icon"></i></div>
             </div>
-            <div class="space"></div>
+            <!-- <div class="space"></div> -->
 
             <div class="section slideup-animation" id="all-works">
                 <div class="section-center">
@@ -155,7 +158,7 @@
                                 </div>
                         </div>
                         <div class="blog-four">
-                            <img src="image4.jpg" class="image-blog-two slideup-animation" alt="">
+                            <img src="image4Small.jpg" class="image-blog-two slideup-animation" alt="">
                             <div class="slideup-animation">
                                 <div class="blog-heading"> Getting started in UI/UX — 2019</div>
                                 <div class="blog-body">Getting started with a new skill is often very confusing. A lot of people give a variety of advice, most of which just might not make sense to you.
@@ -177,11 +180,11 @@
                 <div class="section" id="photos">
                     <div class="center-blog">
                         <div class="segment-one">
-                            <img src="photo1.jpg" class="photo-one slideup-animation" alt="">
+                            <img src="photo1Small.jpg" class="photo-one slideup-animation" alt="">
                         </div>
                         <div class="segment-two">
                             <div class="subsegment-two">
-                                <div> <img src="photo2.jpg"  class="photo-two slideup-animation" alt=""> </div>
+                                <div> <img src="photo2Small.jpg"  class="photo-two slideup-animation" alt=""> </div>
 
                                 <div> <img src="photo3.jpeg"  class="photo-three slideup-animation" alt=""> </div>
                         
@@ -198,7 +201,7 @@
                          <div class="segment-one"></div>
                          <div class="segment-four">
                              <div> <img src="photo5.jpeg"  class="photo-five slideup-animation" alt=""> </div>
-                             <div><img src="photo6.jpg"  class="photo-six slideup-animation" alt=""></div>
+                             <div><img src="photo6Small.jpg"  class="photo-six slideup-animation" alt=""></div>
                          </div>
                     
                     </div>
@@ -206,9 +209,18 @@
                 </div>
 
                 <div id="footer">
-                    <div id="email"><span>Need help?</span><a href="mailto:me@ekkrit.design">me@ekkrit.design</a></div>
-                    <div id="tel"><span>Feel like talking</span><a href="tel:+66 8546 13501">+66 8546 13501</a></div>
-                    <div id="social"><a href="https://dribbble.com/ekkritishappy" target="_blank"><i class="fab fa-dribbble"></i></a><a href="https://twitter.com/ekkritishappy" target="_blank"><i class="fab fa-twitter"></i></a><a href="https://instagram.com/ekkritishappy" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://linkedin.com/in/ekkritishappy" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+                    <div id="email" class="left">
+                        <span class="sub-heading">Need help?</span><a class="footer-item" href="mailto:vidyakusuma92@gmail.com">vidyakusuma92@gmail.com</a>
+                    </div>
+                    <div id="tel" class="left">
+                        <span class="sub-heading">Feel like talking</span><a class="footer-item" href="tel:+91 77 9999 4004">+91 77 9999 4004</a>
+                    </div>
+                    <div id="social" class="right">
+                        <a class="footer-item" href="https://dribbble.com/vidyakusuma" target="_blank"><i class="fab fa-2x fa-dribbble"></i></a>
+                        <a class="footer-item" href="https://medium.com/@VidyaKusuma92" target="_blank"><i class="fab fa-2x fa-medium"></i></a>
+                        <a class="footer-item" href="https://www.instagram.com/vidyakusuma91" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
+                        <a class="footer-item" href="https://www.linkedin.com/in/vidya-kusuma/" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
+                    </div>
                 </div>
 
 
@@ -219,10 +231,11 @@
             
             
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="background-animation.js"></script>
         <script src="particles.js"></script>
         <script src="https://unpkg.com/scrollreveal"></script>
-        
+         
     </body>
 
 

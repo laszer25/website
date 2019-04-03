@@ -111,7 +111,10 @@ var newparams = {
   };
 
 function draw() {
- 
+    
+    document.getElementById( 'spinner' ).style.display = 'none';
+    document.getElementById( 'page' ).style.display = 'inherit';
+    document.getElementById( 'bar-style' ).style.display = 'inline-block';    
     window.particlesJS('particle-js', newparams);
     var slideUp = {
       distance: '150%',
@@ -141,5 +144,3 @@ function openNav() {
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
-
-
