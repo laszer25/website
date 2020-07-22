@@ -40,6 +40,8 @@ body {
     margin-top: 2px;
 }
 
+a { color: inherit; } 
+
 .button-style{
     padding: 0;
     border: none;
